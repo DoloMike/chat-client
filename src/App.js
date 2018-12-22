@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Message from './Message/Message';
 import './App.css';
 
 function App() {
@@ -9,22 +10,18 @@ function App() {
 					<form className="chat">
 						<span />
 						<div className="messages">
-							<div className="message">
-								<div className="myMessage">
-									<p>It looks beautiful!</p>
-									<date>
-										<b>Kate</b> 08.03.2017 14:30:7
-									</date>
-								</div>
-							</div>
-							<div className="message">
-								<div className="fromThem">
-									<p>It looks like the iPhone message box.</p>
-									<date>
-										<b>John Doe</b> 08.03.2016 14:31:22
-									</date>
-								</div>
-							</div>
+							<Message
+								fromThem={false}
+								content={'It looks beautiful!'}
+								author={'Kate'}
+								createdAt={'08.03.2017 14:30:7'}
+							/>
+							<Message
+								fromThem={true}
+								content={'It looks like the iPhone message box.'}
+								author={'John Doe'}
+								createdAt={'08.03.2016 14:31:22'}
+							/>
 							<div className="message">
 								<div className="myMessage">
 									<p>Yep, is this design responsive?</p>
