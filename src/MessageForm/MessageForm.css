@@ -1,0 +1,25 @@
+form.message-form input {
+	font: 400 13px 'Open Sans', sans-serif;
+	border: 0;
+	padding: 0 15px;
+	height: 10%;
+	outline: 0;
+}
+
+form.message-form input[type='text'] {
+	width: 73%;
+	float: left;
+}
+
+form.message-form input[type='submit'] {
+	width: 23%;
+	background: transparent;
+	color: rgb(0, 122, 255);
+	font-weight: 700;
+	text-align: right;
+	float: right;
+}
+
+form.message-form {
+	height: 100%;
+}
