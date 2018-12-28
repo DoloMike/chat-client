@@ -25,7 +25,11 @@
 	transform: translateX(130px);
 }
 
-.message:hover date {
+.message .fromThem .date {
+	left: 4px;
+}
+
+.message:hover .date {
 	opacity: 1;
 }
 
@@ -83,6 +87,7 @@
 	clear: both;
 	border-bottom-left-radius: 30px 0px\9;
 }
+
 .fromThem:before {
 	content: "";
 	position: absolute;
@@ -112,7 +117,7 @@
 	transform: translate(-30px, -2px);
 }
 
-date {
+.date {
 	position: absolute;
 	top: 10px;
 	font-size: 14px;
@@ -121,14 +126,6 @@ date {
 	color: #8b8b90;
 	opacity: 0;
 	z-index: 4;
-}
-
-.myMessage date {
-	left: 105%;
-}
-
-.fromThem date {
-	right: 105%;
 }
 
 .myMessage,
@@ -146,8 +143,8 @@ date {
 	-webkit-transform: translateY(18px);
 }
 
-.myMessage date,
-.fromThem date {
+.myMessage .date,
+.fromThem .date {
 	top: -20px;
 	left: auto;
 	right: 0;

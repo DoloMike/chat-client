@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Message.css';
 
 function Message(props) {
@@ -7,10 +7,10 @@ function Message(props) {
 	return (
 		<div className="message">
 			<div className={messageClassName}>
-				<p>{props.content}</p>
-				<date>
-					<b>{props.author}</b> {props.createdAt}
-				</date>
+				<p> {props.content} </p>
+				<div className="date">
+					<b> {props.author} </b> {props.createdAt}
+				</div>
 			</div>
 		</div>
 	);
