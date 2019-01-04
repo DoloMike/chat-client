@@ -31,7 +31,7 @@
 }
 
 .chat-room ::-webkit-scrollbar {
-	width: 3px;
+	width: 5px;
 	height: 1px;
 	transition: all .5s;
 	z-index: 10;
@@ -56,6 +56,31 @@
 	padding: 2% 3%;
 	border-bottom: 1px solid #ecf0f1;
 }
+
+/* .info {
+	box-sizing: border-box;
+	background: whitesmoke;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	padding: 0 5px;
+	justify-content: space-between;
+}
+
+.info span,
+.info p {
+	align-self: center;
+}
+.info span {
+	color: #0099ff;
+}
+.info p {
+	margin: 0;
+	font-weight: bold;
+}
+.info .contact {
+	margin-left: -30px;
+} */
 
 /*
 	form styles

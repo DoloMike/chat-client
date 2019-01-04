@@ -46,6 +46,11 @@ function ChatRoom(props) {
 
 	return (
 		<div className="chat-room">
+			{/* <div class="info">
+				<span class="back">&#60; Messages</span>
+				<p class="contact">Matthew</p>
+				<span class="details">Details</span>
+			</div> */}
 			<div className="message-window">
 				{messages.map((msg, idx) => (
 					<Message

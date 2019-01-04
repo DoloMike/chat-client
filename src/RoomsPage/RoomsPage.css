@@ -1,0 +1,95 @@
+.rooms-page {
+	cursor: default;
+	position: absolute;
+	top: 5%;
+	right: 1%;
+	left: 1%;
+	bottom: 3%;
+	margin: 0;
+	overflow: hidden;
+	background: white;
+	box-shadow: 0px 3px 15px #c0e1ffc9;
+	border-radius: 2%;
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Chrome/Safari/Opera */
+	-khtml-user-select: none;
+	/* Konqueror */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* IE/Edge */
+	user-select: none;
+}
+
+.rooms-page * {
+	transition: all .5s;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.rooms-page ::-webkit-scrollbar {
+	width: 5px;
+	height: 1px;
+	transition: all .5s;
+	z-index: 10;
+}
+
+.rooms-page ::-webkit-scrollbar-track {
+	background-color: white;
+}
+
+.rooms-page ::-webkit-scrollbar-thumb {
+	background-color: #bec4c8;
+	border-radius: 3px;
+}
+
+.rooms-window {
+	display: block;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+	height: 90%;
+	width: 100%;
+	border-bottom: 1px solid #ecf0f1;
+}
+
+.room-tile {
+	height: 8vh;
+	padding: 1vh;
+	display: block;
+	border-bottom: 1px solid black;
+}
+
+.svg-icon {
+	width: 2em;
+	height: 2em;
+}
+
+.info {
+	box-sizing: border-box;
+	background: whitesmoke;
+	height: 6vh;
+	min-height: 50px;
+	width: 100%;
+	display: flex;
+	padding: 0 20px;
+	justify-content: space-between;
+}
+
+.info span,
+.info p {
+	align-self: center;
+}
+.info span {
+	color: #0099ff;
+}
+.info p {
+	margin: 0;
+	font-weight: bold;
+}
+.info .contact {
+	margin-left: -30px;
+}
